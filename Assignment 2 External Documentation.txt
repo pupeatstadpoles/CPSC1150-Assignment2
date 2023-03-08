@@ -1,0 +1,24 @@
+Program WindChillIndex
+
+Purpose:
+
+
+Declare variables
+	- Double temp --> user input
+	- Double windSpeed --> user input
+	- Int windChill --> set to 0
+
+
+Algorithm:
+	1. START
+	2. Ask user to input temperature in Celsius and assign to var temp.
+	3. Ask user to input wind speed in km/h and assign to var windSpeed.
+	4. Calculate windChill:
+		a. windChill = 13.112 + (0.6215*temp)-(11.37*Math.pow(windSpeed, 0.16) + (0.3965*temp*Math.pow(windspeed, 0.16)
+	5. Check for invalid inputs
+		a. If temp is not between -50C and 5C, print 'Invalid Input'
+		b. If wind speed is not between 0 and 100km/h, print 'Invalid Input'
+		c. Otherwise print 'The wind chill index is' + windChill
+	6. END
+	
+
